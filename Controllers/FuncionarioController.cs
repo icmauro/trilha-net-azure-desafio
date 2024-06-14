@@ -78,6 +78,7 @@ public class FuncionarioController : ControllerBase
 
 
         // TODO: Chamar o método de Update do _context.Funcionarios para salvar no Banco SQL
+        _context.Funcionarios.Update(funcionarioBanco);
         _context.SaveChanges();
 
         var tableClient = GetTableClient();
